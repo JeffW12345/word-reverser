@@ -8,8 +8,7 @@ public class ReverseWord {
 		char[] reversedList = new char[str.length()];
 		int count = 0;
 		for (int characterPosition = str.length() - 1; characterPosition > -1; characterPosition--) {
-			reversedList[count] = (str.charAt(characterPosition));
-			count++;
+			reversedList[count++] = (str.charAt(characterPosition));
 		}
 		str = "";
 		for (char individualCharacter : reversedList) {
@@ -20,8 +19,8 @@ public class ReverseWord {
 
 	public static void main(String[] args) {
 		System.out.print("Please enter the word you would like to reverse.");
-		Scanner scannner = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		System.out.print(FirstReverse(s.nextLine()));
-		scanner.close();
+		s.close();
 	}
 }
